@@ -4259,8 +4259,32 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "student",
+                "BrownDoor",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Bus\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -4348,7 +4372,7 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 222,
+          "height": 433,
           "layer": "",
           "name": "Briscose",
           "persistentUuid": "0c4c2a91-17a8-4bce-a57f-29142afccd57",
@@ -4356,6 +4380,126 @@
           "x": 2,
           "y": 0,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 408,
+          "layer": "",
+          "name": "Sinclair",
+          "persistentUuid": "50260ae3-536d-4c3b-a920-4c5971ade50a",
+          "width": 496,
+          "x": 412,
+          "y": 107,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "FoundSC",
+          "persistentUuid": "e2d2accb-ef16-4e5d-b671-9c3dc1e82d41",
+          "width": 0,
+          "x": 173,
+          "y": 63,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 99,
+          "layer": "",
+          "name": "Person",
+          "persistentUuid": "e09d48cf-a177-43e7-8997-cefe58b3b6eb",
+          "width": 96,
+          "x": 443,
+          "y": 325,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 99,
+          "layer": "",
+          "name": "Person",
+          "persistentUuid": "f15319b0-6189-406c-9d58-d1696089ad83",
+          "width": 127,
+          "x": 630,
+          "y": 330,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 67,
+          "layer": "",
+          "name": "Person",
+          "persistentUuid": "c6682e73-256a-4e8d-8319-b841db2890f4",
+          "width": 89,
+          "x": 541,
+          "y": 344,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 106,
+          "layer": "",
+          "name": "Person",
+          "persistentUuid": "0d76dcab-0f31-4106-9d20-31fa884af1d8",
+          "width": 126,
+          "x": 318,
+          "y": 321,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 67,
+          "layer": "",
+          "name": "Person",
+          "persistentUuid": "c127f623-d9c6-445c-aede-060ba2647b2e",
+          "width": 207,
+          "x": 105,
+          "y": 368,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 79,
+          "layer": "",
+          "name": "Person",
+          "persistentUuid": "5cbc83ac-9833-46de-b718-09dfa932fa56",
+          "width": 109,
+          "x": 18,
+          "y": 351,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4382,7 +4526,7 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
+                      "hasCustomCollisionMask": true,
                       "image": "Sinclair2",
                       "points": [],
                       "originPoint": {
@@ -4396,7 +4540,38 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21.5,
+                            "y": 39
+                          },
+                          {
+                            "x": 24.5,
+                            "y": 30.5
+                          },
+                          {
+                            "x": 21.5,
+                            "y": 24.5
+                          },
+                          {
+                            "x": 27,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 34.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 37.5,
+                            "y": 48
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 49
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -4445,9 +4620,200 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "FoundSC",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "You Found Mr Sinclair!",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "7c7c8b986d4036ec80d85945e2747d71c79c6a47f281cbdf17d7dd886988c536",
+          "name": "Person",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Person.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 11,
+                            "y": 0
+                          },
+                          {
+                            "x": 11,
+                            "y": 13
+                          },
+                          {
+                            "x": 0,
+                            "y": 13
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Sinclair",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::Opacity"
+              },
+              "parameters": [
+                "FoundSC",
+                "=",
+                "255"
+              ]
+            },
+            {
+              "type": {
+                "value": "UnPauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"Bus\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextObject::Opacity"
+              },
+              "parameters": [
+                "FoundSC",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"Bus\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Bus\"",
+                ">",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Briscose storage area\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
